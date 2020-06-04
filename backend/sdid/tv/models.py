@@ -1,13 +1,13 @@
 from django.db import models
 from django.utils import timezone
-from tinymce import HTMLField
+from tinymce import models as tinymce_models
 
 # Create your models here.
 
 class PublicRelations(models.Model):
     title = models.CharField(max_length=200)
     author = models.CharField(max_length=50)
-    content = HTMLField('Content')
+    content = tinymce_models.HTMLField('HTML content')
     display = models.BooleanField()
 
     period_start = models.DateField()
