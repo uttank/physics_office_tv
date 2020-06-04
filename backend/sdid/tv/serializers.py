@@ -4,4 +4,4 @@ from .models import PublicRelations
 class PublicRelationsSerializer(serializers.ModelSerializer):
     class Meta:
         model = PublicRelations
-        fields = ('id','title','author','content','display')
+        fields = ('id','title','author','content','display','period_start','period_end')
