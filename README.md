@@ -4,19 +4,19 @@ django model
 
 1. 제목 - title
 2. 작성자 - author
-3. 홍보기간 - period - 달력형식이면 좋겠다.
+3. 홍보기간 - period - 달력형식이면 좋겠다. start, end 두개의 필드
 4. 게시여부 - boolean
 5. 에디터 - django-tinymce
 6. 작성일 - created
 7. 최종수정일 - modified
 
-mkdir work/physics_office_tv && cd $_
+mkdir work/physics*office_tv && cd \$*
 mkdir backend frontend
 git init
 vi .gitignore
-  venv/
-  *.pyc
-  __pycache__/
+venv/
+\*.pyc
+**pycache**/
 
 python -m venv venv
 source venv/Script/activate
