@@ -1,1 +1,8 @@
-venv/*
+# ignore venv - python virtual env
+/venv
+# django
+*.log
+*.pot
+*.pyc
+__pycache__/
+
