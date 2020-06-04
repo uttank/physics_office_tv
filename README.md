@@ -27,3 +27,17 @@ cd backend
 django-admin startproject sdid
 django-admin startapp tv
 pip install django-tinymce4-lite
+
+# urls.py 에서 include 쓸려면 추가해 줘야 한다.
+
+from django.urls import include
+
+# rest_framework, tinymce 를 urls.py 에 추가해 줬는데 에러남
+
+# python manager createsuperuser 는 python manager migrate 하고 해야 한다
+
+# python manager runserver - 오래 안 쓰긴 했나보다.
+
+# app 은 manager.py 과 같은 level directory 에 있어야 함 ....
+
+# utls.py 에서 tinymce 를 추가해 주지 않아도 admin 메뉴에서 사용할 수 있다.
