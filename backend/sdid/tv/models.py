@@ -14,7 +14,7 @@ class DisplayType(models.Model):
 class PublicRelations(models.Model):
     title = models.CharField(max_length=200)
     author = models.CharField(max_length=50)
-    content = RichTextUploadingField()
+    content = RichTextUploadingField(config_name='awesome_ckeditor')
     displaytype = models.ForeignKey(DisplayType, null=True, on_delete=models.CASCADE)
     display = models.BooleanField()
 
